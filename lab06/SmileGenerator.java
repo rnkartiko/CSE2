@@ -48,11 +48,10 @@ public class SmileGenerator {
         System.out.println(":)");
         //this loop prints out the random number of smileys with only 30 per line
         
-        int y = 1, z = 1;
-        while (z < nSmileys){
-            System.out.print(":)"); 
-            y++;
-            z++;
+        String smiley = ":)";
+        for (int y=1; y<nSmileys; y++){
+            System.out.println(smiley);
+            smiley = smiley + ":)";
         }
         
     } //end of main method
