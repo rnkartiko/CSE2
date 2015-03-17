@@ -20,7 +20,7 @@ public class SmileGenerator {
         int j = 0;
         while (j < 5){
             System.out.print(":)");
-            j++;
+            j ++; //j = j+1
         }
         System.out.println(" ");
         //this while loop prints out 5 smiley faces
