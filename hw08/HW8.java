@@ -69,11 +69,13 @@ public class HW8 {
     } //end of box method
     
     public static String getInput(Scanner scan, String string) {
-        if (string == "C" || string == "c") {
+        scan = myScanner.nextInt();
+        if (scan = "c" || scan = "C") {
             return;
         }
         else {
-            System.out.println("Yea right LOSER!");
+            System.out.println("Yea rich LOSER!");
+            break;
         }
         
     } //end of getInput method

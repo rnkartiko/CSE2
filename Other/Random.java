@@ -5,21 +5,53 @@
 
 import java.util.Scanner; //import Scanner
 
-//class setup
-public class Random {
-    //main method
-    public static void main(String [] args) {
-        Scanner myScanner = new Scanner(System.in); //prompt user for input
-        int number = myScanner.nextInt();
-        System.out.println(Factorial(number));
-    } //end of main method
+import java.util.Random;
+import java.util.Scanner;
+
+public class Methods {
+    public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("The"+adjective()+subject()+verb()+"the"+adjective()+object());
+            System.out.println("Enter 1 for another sentence. Enter any other int to quit.");
+            int value = myScanner.nextInt();
+            if (value == 1) {
+                continue;
+            }
+            else {
+                break;
+            }
+        }
+
+    }
     
-        //method for finding factorial
-    public static int Factorial(int x) {
-            int fact = 1;
-            for (int j=1; j<=x; x--) {
-                fact = fact*x;
-            } //this for loop calculates the normal factorial for a number
-    return fact;    
-    } //end of Factorial method   
-} //end of class
+    public static String adjective() {
+        Random randomGenerator = new Random();
+        int randomInt = randomGenerator.nextInt(10);
+        
+        String adjective;
+        switch (randomInt) {
+            case 0: adjective = "blue";
+                break;
+            case 1: adjective = "soft";
+                break;
+            case 2: adjective = "gooey";
+                break;
+            case 3: adjective = "golden";
+                break;
+            case 4: adjective = "quick";
+                break;
+            case 5: adjective = "charming";
+                break;
+            case 6: adjective = "sacred";
+                break;
+            case 7: adjective = "smart";
+                break;
+            case 8: adjective = "long";
+                break;
+            case 9: adjective = "fuzzy";
+                break;
+        } 
+        return adjective;
+    } //end of adjective method
+}
