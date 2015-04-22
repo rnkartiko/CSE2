@@ -12,14 +12,8 @@ public class ArrayInputs {
         int sizeOfArray = myScanner.nextInt();
         int [] array = new int[sizeOfArray];
         System.out.println("Please enter 10 positive integers: ");
-        int i = 0;
-        do {
-            if (inputCheck(myScanner.nextInt())) {
-                array[i] = myScanner.nextInt();
-            }
-            i++;
-        }
-        while (i < sizeOfArray);
+        inputCheck(myScanner.nextInt());
+        
     } //end of main method
     
     public static int inputCheck(int x) {
